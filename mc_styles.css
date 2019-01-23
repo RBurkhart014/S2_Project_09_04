@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+ /* Name: Ryan C Burkhart 
+    Date: 1-22-19 */
+
+    html {
+        background: rgb(0, 0, 0);
+    }
+
+    body {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 640px;
+        max-width: 940px;
+        background: rgb(255, 255, 255) fixed;
+        color: black;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        background-color: rgb(245, 245, 140);
+    }
+
+    input#firstBox:focus:valid, input#lastBox:focus:valid, input#streetBox:focus:valid, input#cityBox:focus:valid, input#phoneBox:focus:valid, input#zipBox:focus:valid, input#stateBox:focus:valid {
+        background-color: rgb(220, 255, 220) bottom right no-repeat;
+    }
+    
+    input#firstBox:focus:invalid, input#lastBox:focus:invalid, input#streetBox:focus:invalid, input#cityBox:focus:invalid, input#phoneBox:focus:invalid, input#zipBox:focus:invalid input#stateBox:focus:invalid {
+        background-color: rgb(220, 255, 220) right/contain no-repeat;
+    }
+
+    

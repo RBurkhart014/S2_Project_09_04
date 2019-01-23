@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+ <html class="no-js">
+
+    <!-- Name: Ryan C Burkhart 
+         Date: 1-22-19 -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mc_styles.css">
+        <link rel="stylesheet" href="mc_forms.css">
+        <script src="mc_script.js"></script>
+    </head>
+
+    <body>  
+        
+        <img src="mc_logo.png" alt="Logo">
+        <br>
+        <br>
+        <br>
+        <form name="cForm" action=" http://www.mill_computers.com/orders/process.cgi." method="POST">
+            <div>            
+            <label for="firstBox">First Name</label>
+            <input name="fName" id="firstBox" type="text" required />
+            </div>
+            <br>
+            <div>
+            <label for="lastBox">Last Name</label>
+            <input name="lName" id="lastBox" type="text" required />
+            </div>
+            <br>
+            <div>
+            <label for="streetBox">Street Address</label>
+            <input name="street" id="streetBox" type="text" required />
+            </div>
+            <br>
+            <div>
+            <label for="cityBox">City</label>
+            <input name="city" id="cityBox" type="text" required />
+            </div>
+            <br>
+            <div>
+            <label for="stateBox">State</label>
+            <input name="state" id="stateBox" list="text" required />
+            </div>
+            <br>
+            <div>
+            <label for="zipBox">ZIP</label>
+            <input name="zip" id="zipBox" list="text" placeholder="nnnnn" required />
+            </div>
+            <br>
+            <div>
+            <label for="phoneBox">Phone</label>
+            <input name="phone" id="phoneBox" list="tel" placeholder="nnn-nnn-nnnn" required />
+            </div>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+
+</html>
