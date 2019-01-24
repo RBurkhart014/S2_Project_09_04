@@ -4,19 +4,20 @@
     Date: 1-22-19 */
 
     html {
-        background: rgb(0, 0, 0);
+        background: url(keyboard-pc.jpg) center center/cover fixed no-repeat
     }
-
+/* This makes the background that keyboard picture */
     body {
         display: block;
         margin-left: auto;
         margin-right: auto;
         min-width: 640px;
         max-width: 940px;
-        background: rgb(255, 255, 255) fixed;
-        color: black;
+        background: rgb(0, 0, 0, 0.5) fixed;
+        color: white;
+        opacity: 50%;
     }
-
+/* This made the body all the colors it is, & lowered the opacity so you can see through it more */
     h1 {
         text-align: center;
     }
@@ -24,7 +25,7 @@
     input:focus, select:focus, textarea:focus {
         background-color: rgb(245, 245, 140);
     }
-
+/* This made it so when you click on a textbox it highlights yellow */
     input#firstBox:focus:valid, input#lastBox:focus:valid, input#streetBox:focus:valid, input#cityBox:focus:valid, input#phoneBox:focus:valid, input#zipBox:focus:valid, input#stateBox:focus:valid {
         background-color: rgb(220, 255, 220) bottom right no-repeat;
     }
@@ -32,5 +33,43 @@
     input#firstBox:focus:invalid, input#lastBox:focus:invalid, input#streetBox:focus:invalid, input#cityBox:focus:invalid, input#phoneBox:focus:invalid, input#zipBox:focus:invalid input#stateBox:focus:invalid {
         background-color: rgb(220, 255, 220) right/contain no-repeat;
     }
+/* Those 2 clusters of styles make it so while able to text in a textbox, the right side of it will allow you to see if its wrong or right */
+    form {
+        text-align: center;
+    }
 
+    input:focus:not([type='radio']) {
+        background-color: rgb(255, 218, 165);
+    }
     
+    input:focus:valid:not([type='radio']) {
+        background: rgb(215, 255, 215) url(mc_go.png) right no-repeat;
+    }
+    
+    input:focus:invalid:not([type='radio']) {
+        background: rgb(255, 245, 215) url(mc_stop.png) right no-repeat;
+    }
+/* These made the yes and no circles */
+    div.object {
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    div.object>* {
+        flex: 1 1 150px;
+        -webkit-flex: 1 1 150px;
+    }
+/* Moved all the input boxes for the right */
+    div.formRow {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin: 7px 0px;
+    }
+
+    div.formRow>* {
+        -webkit-flex: 1 1 150px;
+        flex: 1 1 150px;
+    }
+/* This moved all the yes and no circles to the right */

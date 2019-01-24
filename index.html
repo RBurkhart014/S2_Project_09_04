@@ -3,7 +3,6 @@
 
     <!-- Name: Ryan C Burkhart 
          Date: 1-22-19 -->
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,7 @@
 
     <body>  
         
-        <img src="mc_logo.png" alt="Logo">
+        <img src="mc_logo.png" width="940" height="100" alt="Logo">
         <br>
         <br>
         <br>
@@ -57,9 +56,101 @@
             <input name="phone" id="phoneBox" list="tel" placeholder="nnn-nnn-nnnn" required />
             </div>
             <br>
-
-            <button type="submit">Submit</button>
         </form>
+        <!-- These were the first bit of textboxes for basic information -->
+        <br>
+        <br>
+        <br>
+        <br>
+         <div class="object">
+        <label for="">Processor Speed</label>
+        <select name="OrderType" id="order" required>
+            <option value="">3.2 GHz</option>
+            <option value="">4.0 GHz</option>
+            <option value="">5.2 GHz</option>
+         </select>
+        </div>
+        <div class="object">
+         <label for="">Memory</label>
+         <select name="orderType" id="order" required>
+            <option value="">1 MB</option>
+            <option value="">2 MB</option>
+            <option value="">4 MB</option>
+            <option value="">8 MB</option>
+         </select>
+         </div>
+         <div class="object">
+         <label for="">Monitor Size</label>
+         <select name="orderType" id="order" required>
+            <option value="">15"</option>
+            <option value="">17"</option>
+            <option value="">19"</option>
+            <option value="">21"</option>
+         </select>
+         </div>
+         <div class="object">
+         <label for="">Hard Drive</label>
+         <select name="orderType" id="order" required>
+            <option value="">240 GB</option>
+            <option value="">500 GB</option>
+            <option value="">750 GB</option>
+            <option value="">1 TB</option>
+         </select>
+         </div>
+<!-- This were all the dropdown menus, allowing us to choose which we liek -->
+         <div class="formRow">
+             <label for="dvd">DVD Burner</label>
+             <div>
+                <label for="Yes">Yes</label>
+                <input name="dvd" id="Yes" value="Yes" type="radio">
+             </div>
+             <div>
+                <label for="No">No</label>
+                <input name="dvd" id="No" value="No" type="radio">
+             </div>
+         </div>
+
+         <div class="formRow">
+                <label for="Tuner">Tuner Card</label>
+                <div>
+                   <label for="Yes">Yes</label>
+                   <input name="Tuner" id="Yes" value="Yes" type="radio">
+                </div>
+                <div>
+                   <label for="No">No</label>
+                   <input name="Tuner" id="No" value="No" type="radio">
+                </div>
+            </div>
+
+            <div class="formRow">
+                    <label for="Media">Media Card</label>
+                    <div>
+                       <label for="Yes">Yes</label>
+                       <input name="Media" id="Yes" value="Yes" type="radio">
+                    </div>
+                    <div>
+                       <label for="No">No</label>
+                       <input name="Media" id="No" value="No" type="radio">
+                    </div>
+                </div>
+                <!-- These 3 made it so the yes and no circles appear -->
+                <br>
+                <div>
+                    <input name="mailMe" id="mailCB" value="yes" type="checkbox">
+                    <label for="mailCB">Add a 24-Month extented warranty</label>
+                </div>
+                <!-- This added a checkbox if you want a warranty or not -->
+                <br>
+                <div>
+                    <label for="commBox">Tell us more about your experience!</label>
+                    <textarea name="addInfo" id="commBox"></textarea>
+                </div>
+                <!-- Textbox allowing you to tell us your thoughts -->
+                <br>
+                <br>
+
+                <button type="submit">Submit</button>
+                <!-- added the submit button -->
     </body>
 
 </html>
